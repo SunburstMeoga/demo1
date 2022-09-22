@@ -35,7 +35,7 @@ class _BottomTabState extends State<BottomTab> {
         // ignore: prefer_const_literals_to_create_immutables
         items: [
           BottomNavigationBarItem(
-              icon: Icon(IconFont.icon_tongzhi), label: "首页"),
+              icon: Icon(IconFont.icon_tongzhi_copy), label: "首页"),
           BottomNavigationBarItem(icon: Icon(Icons.category), label: "分类"),
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: "设置")
         ],
