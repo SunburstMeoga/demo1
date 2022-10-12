@@ -20,7 +20,7 @@ class _BottomTabState extends State<BottomTab> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Lotto')),
+      // appBar: AppBar(title: Text('Lotto')),
       body: pageList[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
@@ -34,11 +34,16 @@ class _BottomTabState extends State<BottomTab> {
         fixedColor: Colors.blue,
         // ignore: prefer_const_literals_to_create_immutables
         items: [
-          BottomNavigationBarItem(
-              icon: Icon(IconFont.icon_tongzhi_copy), label: "首页"),
-          BottomNavigationBarItem(icon: Icon(Icons.category), label: "分类"),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "设置")
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "首页"),
+          BottomNavigationBarItem(icon: Icon(Icons.store), label: "商城"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "我的")
         ],
+      ),
+      drawer: Drawer(
+        child: Text('this is drawer'),
+      ),
+      endDrawer: Drawer(
+        child: Text('this is right drawer'),
       ),
     );
   }
